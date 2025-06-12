@@ -1,0 +1,123 @@
+*{
+ 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: 20px;
+    }
+    .extra{
+      height: 400px;
+      width: 400px;
+    background-color: rgb(209, 233, 169);
+      position: fixed;
+      inset: 0;
+      margin: auto;
+      display: none;
+      position: fixed;
+   
+      border-radius: 10px;
+      padding: 10px;
+    }
+    .cross{
+      position: absolute;
+      right: 4px;
+      top: -10px;
+      font-size: 40px;
+      cursor: pointer;
+    }
+    .open{
+display: block;
+    }
+    .possible{
+      display: none;
+      margin-top: 40px;
+      margin-left: auto;
+   margin-right: auto;
+   background-color:#128C7E;
+   color: white;
+   border-radius: 8px;
+   cursor: pointer;
+   transition: all 3s;
+    }
+.possible:hover{
+  background-color: #08584e;
+  width: 300px;
+  height: 60px;
+}
+    .click{
+      display: block;
+    }
+    .container{
+      width: 500px;
+      margin: auto;
+      background-color:#d3ebee;
+height: 500px;
+border-radius: 10px;
+    }
+    .box{
+     margin-top: 40px;
+     padding: 10px; 
+     background-color: #87CEEB;
+    }
+    #heading{
+      font-size: 40px;
+      text-align: center;
+      color: #003366;
+      background-color: #87CEEB;
+  
+    }
+    #attendanceForm{
+      display: flex;
+      flex-direction: column;
+
+    }
+    button{
+      color: white;
+      background-color: #128C7E;
+      height: 30px;
+      font-size: 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    #btn1:hover{
+      background-color:#128C7E ;
+    }
+    #atd{
+      font-size: 25px;
+    }
+ 
+    .calculate{
+      text-align: center;
+         margin-top: 50px;
+          padding: 5px;
+          margin-left: 92px;
+          
+
+    }
+    .calculate:hover{
+      border-radius: 10px;
+    }
+    #result{
+      font-size: 22px;
+      color:black;
+    }
+    .final{
+      border: 4px solid black;
+      border-radius: 10px;
+      background-color: rgb(5, 122, 122);
+      color: white;
+      padding: 10px;
+      font-size: 20px;
+      text-align: center;
+      display: none;
+    }
+    .final:hover{
+      background-color: rgb(5, 71, 71);
+    }
+    .ok{
+      display: block;
+    }
+    .last{
+      font-size: 12px;
+     position: absolute;
+     right: 0px;
+     line-height: 10px;
+    }

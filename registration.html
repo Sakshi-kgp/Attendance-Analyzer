@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    body{
+
+    }
+    .container{
+      margin: 40px auto;
+      max-width:700px;
+      width: 70%;
+      height: 400px;
+      background: url(https://woorise.com/wp-content/uploads/2021/03/Online-event-registration.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    
+      padding: 30px;
+      
+    }
+    .box{
+      color: aliceblue;
+      display: flex;
+      flex-direction: column;
+      margin: 10px auto;
+      padding: 20px;
+      font-size: 20px;
+      width: 70%;
+      
+      
+    }
+    .box1{
+      margin: 10px 2px;
+    }
+    .box2{
+      margin: 10px 2px;
+    }
+    .box3{
+      margin: 10px 2px;
+    }
+    input{
+      background-color: whitesmoke;
+      border: none;
+      width: 200px;
+      border-radius: 5px;
+    }
+    fieldset{
+      margin:8px auto ;
+    padding: 5px;
+    box-sizing: content-box;
+    
+    }
+    legend{
+      color: rgb(104, 157, 12);
+      font-size: larger;
+    }
+    @media(max-width:768px){
+      .container{
+        height: 700px;
+      }
+      .box{
+        display: flex;
+       
+        flex-direction: column;
+      }
+    }
+    button{
+   
+     bottom: 5px;
+      background-color: rgb(15, 160, 15);
+     margin-left: auto;
+     margin-right: auto;
+      border-radius: 7px;
+      border: 2px solid;
+     box-shadow: 0 0 8 7 green;
+     padding: 5px;
+     color: white;
+     font-size: 1rem;
+    }
+    button:hover{
+      background-color: green;
+      
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Attendance Tracker</h1>
+    <div class="box">
+      <div class="box1">
+      <label for="startDate">Start Date:</label>
+      <input type="date" id="startDate">
+    </div>
+    <div class="box2">
+      <label for="endDate">End Date:</label>
+      <input type="date" id="endDate">
+    </div>
+    <div class="box3">
+      <label for="daysAttended">Number of Days Attended:</label>
+      <input type="number" id="daysAttended" min="0">
+    </div>
+
+    <div class="box4">
+      <fieldset>
+        <legend>Subjects</legend>
+        <input type="radio" name="subject" value="Object-oriented programming" id="OOP"><label for="OOP">Object-oriented programming</label>
+        <input type="radio" name="subject" value="Computer graphics" id="CG"><label for="CG">Computer graphics</label>
+
+        <input type="radio"  name="subject" value="Operating system" id="OS"><label for="OS">Operating system</label>
+
+        <input type="radio" name="subject" value="Computer system organization"><label for="OS">Operating system</label>
+
+        <input type="radio" name="subject" value="BEEE" id="BEEE"><label for="BEEE">BEEE</label><br>
+        <input type="radio" name="subject" value="Environmental Science" id="EVS"><label for="EVS">Environmental Science</label>
+      </fieldset>
+      <button onclick="calculateAttendance()">Calculate Attendance</button>
+    </div>
+
+
+
+
+    </div>
+  </div>
+</body>
+</html>

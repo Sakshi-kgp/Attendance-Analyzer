@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attendance Calculator</title>
+  <link rel="stylesheet" href="attendence.css">
+</head>
+<body>
+  <div class="container">
+  <h1 id="heading">Attendance Analyzer</h1>
+  <div class="box">
+  <form id="attendanceForm">
+    <input type="number" id="pa" placeholder="Number of days attended" required><br>
+    <input type="number" id="ta" placeholder="Total number of days" required><br>
+    <button type="submit" id="btn1">Calculate Attendance</button>
+    <p id="atd"></p>
+  </form>
+  </div>
+  <button class="possible">Check it is possible to achieve 75% or not</button>
+  
+  </div>
+<div class="extra">
+   <label for="targetDate">Enter a future date:</label>
+  <input type="date" id="targetDate" /><br>
+  <button onclick="calculateWorkingDays()" class="calculate"> Total working days</button>
+  <p id="result"></p>
+  <div class="cross">&times;</div>
+  <p class="final"></p>
+</div>
+<div class="last">
+  <p class="made-with">Designed and developed by  </p>
+  <h1>Anish Kumar</h1>
+</div>
+ <script src="attendence.js"></script>
+</body>
+</html>
